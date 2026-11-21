@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>MY HTML PAGE </title>
+   <style>
+      body {
+         background-image: url("images/home1.png");
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: auto;
+         min-height: 100vh;
+         margin: 0;
+         font-family: Arial, sans-serif;
+
+         display: flex;
+         flex-direction: column;
+         box-sizing: border-box;
+
+         /* Left and right green borders with matching gold inner trim */
+         border-left: 20px solid #005a32;
+         border-right: 20px solid #005a32;
+         box-shadow: inset 4px 0 0 #ffd700, inset -4px 0 0 #ffd700;
+      }
+
+      header {
+         background-color: #005a32;
+         color: #ffd700;
+         padding: 20px 0;
+         overflow: hidden;
+         white-space: nowrap;
+         border-bottom: 4px solid #ffd700;
+      }
+
+      .moving-text {
+         display: inline-block;
+         font-size: 48px;
+         font-weight: bold;
+         letter-spacing: 3px;
+         padding-left: 100%;
+         animation: scroll-left 12s linear infinite;
+      }
+
+      @keyframes scroll-left {
+         0% {
+            transform: translateX(0);
+         }
+         100% {
+            transform: translateX(-100%);
+         }
+      }
+
+      /* Pushes the button to the bottom just above the footer */
+      .button-container {
+         margin-top: auto;
+         text-align: center;
+         padding: 20px;
+      }
+
+      .next-btn {
+         display: inline-block;
+         background-color: #005a32;
+         color: #ffd700;
+         border: 3px solid #ffd700;
+         padding: 12px 30px;
+         font-size: 18px;
+         font-weight: bold;
+         text-decoration: none;
+         border-radius: 6px;
+         letter-spacing: 1px;
+         transition: 0.3s;
+      }
+
+      .next-btn:hover {
+         background-color: #ffd700;
+         color: #005a32;
+         border-color: #005a32;
+      }
+
+      footer {
+         background-color: #005a32;
+         color: #ffd700;
+         text-align: center;
+         padding: 15px 10px;
+         font-size: 16px;
+         font-weight: bold;
+         letter-spacing: 1px;
+         border-top: 4px solid #ffd700;
+      }
+   </style>
+</head>
+<body>
+
+   <header>
+      <div class="moving-text">SAINT PAUL UNIVERSITY SURIGAO</div>
+   </header>
+
+   <div class="button-container">
+      <a href="home2try.html" class="next-btn">Next Page &rarr;</a>
+   </div>
+
+   <footer>
+      Saint Paul University Surigao &bull; Surigao City
+   </footer>
+
+</body>
+</html>
